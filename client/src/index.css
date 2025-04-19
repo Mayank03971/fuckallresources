@@ -1,0 +1,185 @@
+/* My CSS */
+/* -------------Init------------- */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+html,
+body {
+   width: 100%;
+   height: 100%;
+   overflow-x: hidden;
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* font-family: Poppins, sans-serif; */
+}
+body {
+   margin: 0;
+   font-family: 'Lato', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   background: #f7f7f7;
+}
+
+code {
+   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+#root {
+   width: 100%;
+   height: 100%;
+}
+
+.slick-dots li button:before {
+   font-size: 16px !important;
+   color: gray !important;
+}
+.slick-dots li.slick-active button:before {
+   color: #29303b !important;
+}
+.slick-list {
+   padding: 1.5rem 0 0.5rem 4rem !important;
+   background: #f0f0f0;
+   box-shadow: 0px 0px 8px 0px #33333330;
+}
+.slick-slide .slick-active {
+   width: 50%;
+}
+.slick-dots {
+   bottom: 0px;
+}
+.slick-slide img {
+   margin: 0 auto;
+}
+.slick-slider {
+   margin-bottom: 2rem !important;
+}
+/* .homepage .slick-next {
+	right: -10px !important;
+	z-index: 1;
+}
+.homepage .slick-prev {
+	left: -10px !important;
+	z-index: 1;
+} */
+.slick-prev {
+   left: 1% !important;
+   z-index: 1;
+   /* background: #000; */
+}
+.slick-next {
+   right: 1% !important;
+   z-index: 1;
+   color: #000;
+}
+
+.slick-prev:before,
+.slick-next:before {
+   font-size: 36px !important;
+   color: #777 !important;
+}
+.font-small {
+   text-align: center;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+   width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   -webkit-border-radius: 10px;
+   border-radius: 10px;
+   background: rgba(212, 224, 236, 0.8);
+   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+   background: rgba(174, 194, 204, 0.4);
+}
+
+/* spinner */
+.loader {
+   font-size: 10px;
+   margin: 50px auto;
+   text-indent: -9999em;
+   width: 11em;
+   height: 11em;
+   border-radius: 50%;
+   background: #d6d2d2;
+   background: -moz-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+   background: -webkit-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+   background: -o-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+   background: -ms-linear-gradient(left, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+   background: linear-gradient(to right, #ffffff 10%, rgba(255, 255, 255, 0) 42%);
+   position: relative;
+   -webkit-animation: load3 1.4s infinite linear;
+   animation: load3 1.4s infinite linear;
+   -webkit-transform: translateZ(0);
+   -ms-transform: translateZ(0);
+   transform: translateZ(0);
+}
+.loader:before {
+   width: 50%;
+   height: 50%;
+   background: #d6d2d2;
+   border-radius: 100% 0 0 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   content: '';
+}
+.loader:after {
+   background: #0dc5c1;
+   background: transparent;
+   width: 75%;
+   height: 75%;
+   border-radius: 50%;
+   content: '';
+   margin: auto;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+}
+@-webkit-keyframes load3 {
+   0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+   100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+@keyframes load3 {
+   0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+   100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+   }
+}
+
+@media screen and (max-width: 650px) {
+   .slick-list {
+      padding: 0 !important;
+      margin: 0 !important;
+   }
+   ::-webkit-scrollbar {
+      display: none;
+   }
+}
